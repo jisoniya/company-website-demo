@@ -241,7 +241,7 @@ export const getOverlayStyle = () => ({
   left: 0,
   width: '100%',
   height: '100%',
-  backgroundColor: 'rgba(0, 0, 0, 0.5)', // semi-transparent black
+  backgroundColor: 'rgba(0, 0, 0, 0.64)', // semi-transparent black
   zIndex: 0,
 });
 
@@ -502,10 +502,6 @@ export const marqueeTrack = {
 
 
 //project
-
-export const getCardWrapperStyle = () => ({
-  mb: { xs: "2%", md: "10%" }
-});
 
 export const getCardBoxStyle = () => ({
   p: 3,
@@ -1611,3 +1607,17 @@ export const mobileAppProcessChainReadMore = {
 
 
 
+//style mobile banner
+
+export const getAboutBannerStyle = () => ({
+  position: 'relative',
+  width: '100%',
+  // height: "100vh",
+  overflow: 'hidden',
+  color: '#fff',
+  minHeight: "calc(100vh - 120px)",
+  backgroundImage: "url('/assets/images/mobileApp.jpg')",
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  backgroundRepeat: 'no-repeat',
+});

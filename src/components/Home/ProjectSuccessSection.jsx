@@ -12,7 +12,6 @@ import {
   getSubPStyle,
   getBrStyle,
 } from '../style';
-import ValidateAppIdea from './ValidateAppIdea';
 
 const cards = [
   {
@@ -64,7 +63,7 @@ const ProjectSuccessSection = () => {
         strategic, and focused on your ROI. Get end-to-end support that keeps your<Box component="br" sx={getBrStyle()} /> projects on track and within budget.
       </Typography>
 
-      <Grid container spacing={3} mt={4} sx={getCardWrapperStyle()} display="flex" justifyContent="center">
+      <Grid container spacing={3} mt={4} display="flex" justifyContent="center">
         {cards.map((card, idx) => (
           <Grid item xs={12} sm={6} md={4} key={idx} >
             <Box sx={card.type === 'primary' ? getCardBoxPrimaryStyle() : getCardBoxStyle()}>
@@ -75,7 +74,6 @@ const ProjectSuccessSection = () => {
         ))}
       </Grid>
     </Container>
-      <ValidateAppIdea />
     </Box>
   );
 };

@@ -7,11 +7,10 @@ import RoutesConfig from "./Routes";
 function App() {
   const location = useLocation();
   const isHirePage = location.pathname === '/hire';
-  const isMobileServicePage = location.pathname === '/services/mobile-app-development';
 
   return (
     <div className="App" style={{position:"relative",fontFamily: 'Poppins, sans-serif'}}>
-      <Header isHirePage={isHirePage} isMobileServicePage={isMobileServicePage} />
+      <Header isHirePage={isHirePage}  />
     <RoutesConfig />
     <Footer />
     </div>

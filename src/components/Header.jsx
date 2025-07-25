@@ -73,7 +73,7 @@ const Header = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const location = useLocation();
-const isSpecialHeaderPage = location.pathname === '/hire' || location.pathname === '/services/mobile-app-development';
+const isSpecialHeaderPage = location.pathname === '/hire';
 
 
   const handleHover = (label) => setHoveredMenu(label);

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Grid, Typography } from '@mui/material';
+import { Box, Container, Grid, Typography,Divider } from '@mui/material';
 import {
   getWhiteWrapperStyle,trustedcontainerStyle
 } from '../style';
@@ -11,22 +11,39 @@ const TrustedBySection = () => {
    
 
       {/* Stats Section */}
-      <Grid container spacing={3} justifyContent="center" sx={{ mb: {xs:2,md:"10%"} }}>
-        {[
-          { value: '200+', label: 'Developers' },
-          { value: '1000+', label: 'Projects Delivered' },
-          { value: '97%', label: 'Client Satisfaction' },
-        ].map((stat, index) => (
-          <Grid item xs={6} sm={6} md={4} key={index} >
-            <Box textAlign="center">
-              <Typography variant="h4" sx={{fontWeight:700,fontSize:{xs:"35px",md:"56px"} ,fontFamily :"Roboto, sans-serif"}}>
-                {stat.value}
-              </Typography>
-              <Typography variant="body2" sx={{fontWeight:700,fontSize:"16px",fontFamily :"Roboto, sans-serif"}}>{stat.label}</Typography>
-            </Box>
-          </Grid>
-        ))}
-      </Grid>
+      <Grid container spacing={3} justifyContent="center" sx={{ mb: { xs: 2, md: "10%" } }}>
+          {[
+            { value: '200+', label: 'Developers' },
+            { value: '1000+', label: 'Projects Delivered' },
+            { value: '97%', label: 'Client Satisfaction' },
+          ].map((stat, index, arr) => (
+            <React.Fragment key={index}>
+              <Grid item xs={12} sm={6} md={3}>
+                <Box textAlign="center">
+                  <Typography variant="h4" sx={{ fontWeight: 700, fontSize: { xs: "35px", md: "56px" }, fontFamily: "Roboto, sans-serif" }}>
+                    {stat.value}
+                  </Typography>
+                  <Typography variant="body2" sx={{ fontWeight: 700, fontSize: "16px", fontFamily: "Roboto, sans-serif" }}>
+                    {stat.label}
+                  </Typography>
+                </Box>
+              </Grid>
+              {index < arr.length - 1 && (
+                <Divider
+                  orientation="vertical"
+                  flexItem
+                  sx={{
+                    display: { xs: "none", md: "block" },
+                    mx: 0,
+                    borderColor: "#D9D9D9",
+                    borderWidth: 1,
+                    alignSelf: "stretch",
+                  }}
+                />
+              )}
+            </React.Fragment>
+          ))}
+        </Grid>
 
       {/* Bottom Section */}
       <Grid container spacing={3} alignItems="center">

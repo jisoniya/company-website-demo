@@ -11,6 +11,7 @@ import IndustrySolutionsSection from './IndustrySolutionsSection';
 import CustomerTestimonials from './CustomerTestimonials';
 import BlogSection from './BlogSection';
 import ContactSection from './ContactSection';
+import ValidateAppIdea from './ValidateAppIdea';
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <ProductDevelopmentSection />
       <TechStackSection />
       <ProjectSuccessSection />
+      <ValidateAppIdea />
       <IndustrySolutionsSection />
       <CustomerTestimonials />
       <BlogSection />

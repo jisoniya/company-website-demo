@@ -49,7 +49,7 @@ const ProductDevelopmentSection = () => {
     <Box sx={getWhiteWrapperStyle()}>
        <Box sx={containerStyle()}>
       <Typography sx={getH2Style()}>
-        Market-Ready<br />Product Development Services
+        Market-Ready Product Development Services
       </Typography>
 
      <Box sx={getTabNavStyle()}>
