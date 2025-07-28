@@ -6,7 +6,7 @@ import {
 
 const TrustedBySection = () => {
   return (
-    <Box component="section" sx={getWhiteWrapperStyle()}>
+    <Box component="section" sx={{...getWhiteWrapperStyle(),background:"#ffffff"}}>
      <Container sx={trustedcontainerStyle()}>
    
 

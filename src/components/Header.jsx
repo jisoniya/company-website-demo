@@ -36,7 +36,7 @@ const menuConfig = [
   { label: 'Home', path: '/' },
   {
     label: 'Services',
-    path: '/services',
+    path: '/services/mobile-app-development',
     submenu: [
       { label: 'Mobile App Development', path: '/services/mobile-app-development' },
       { label: 'Custom Software Development', path: '/services/mobile-app-development' },
@@ -73,7 +73,8 @@ const Header = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
   const location = useLocation();
-const isSpecialHeaderPage = location.pathname === '/hire';
+const isSpecialHeaderPage =
+  location.pathname === '/hire' || location.pathname.startsWith('/services');
 
 
   const handleHover = (label) => setHoveredMenu(label);

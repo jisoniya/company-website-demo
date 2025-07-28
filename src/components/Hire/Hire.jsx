@@ -8,12 +8,14 @@ import CodeQualitySection from './CodeQualitySection';
 import { globalMarqueeKeyframes } from '../style';
 import WhyHireDevelopers from './WhyHireDevelopers';
 import CustomerTestimonials from '../Home/CustomerTestimonials';
+import TrustedLogos from '../TrustedLogos';
 
 const Hire = () => {
   return (
     <Box >
       <GlobalStyles styles={globalMarqueeKeyframes} />
       <HireDevelopers />
+      <TrustedLogos />
       <TryBeforeSection />
       <TechnologiesSection />
       <HireByRoleSection />

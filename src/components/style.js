@@ -3,7 +3,7 @@ export const containerStyle = () => ({
   maxWidth: {
     xs: "100%", // Full width on small screens
     md: "1160px", // 960px on medium screens
-    lg: "1260px", // 1280px on large screens
+    lg: "1160px", // 1280px on large screens
     xl: "1480px", // Custom width for extra large screens
   },
   margin: "0 auto",
@@ -57,7 +57,6 @@ export const getH2Style = () => ({
 export const getPStyle = () => ({
   fontWeight: 400,
   fontSize: { xs: "18px", sm: "26px", md: "18px" },
-  fontFamily: "Poppins, sans-serif",
   color: "#F8F6F6",
     mb: { xs: 1, md: "15px" },
 });
@@ -65,7 +64,6 @@ export const getPStyle = () => ({
 export const getSubPStyle = () => ({
   fontWeight: 400,
   fontSize: { xs: "14px", sm: "16px", md: "16px", lg: "18px" },
-  fontFamily: "Poppins, sans-serif",
   color: "#F8F6F6",
   lineHeight: "30px",
 });
@@ -88,7 +86,6 @@ export const contactButton = {
   textTransform: 'uppercase',
   overflow: 'hidden',
   transition: 'all 0.4s ease',
-  fontFamily: "Poppins, sans-serif",
   '&:hover': {
     backgroundColor: '#3243FF',
     color: '#001444', // navy/dark
@@ -137,7 +134,6 @@ export const menuButtonStyle = {
   fontWeight: 500,
   fontSize: '18px',
   textTransform: 'capitalize',
-  fontFamily: "Poppins, sans-serif",
 };
 
 export const megaMenuBox = {
@@ -176,7 +172,6 @@ export const getStartedButton = {
   border: '2px solid #ffad00',
   backgroundColor: '#ffad00',
   color: '#000000',
-  fontFamily: 'Poppins, sans-serif',
   fontWeight: 500,
   fontSize: '18px',
   textTransform: 'capitalize',
@@ -413,8 +408,7 @@ export const getCardTitle = () => ({
 export const getCardText = () => ({
   fontSize: '18px',
   lineHeight: 1.7,
-  color: '#000000',
-  fontFamily: "poppins, sans-serif", fontWeight: 500,
+  color: '#000000', fontWeight: 500,
 });
 
 export const getServiceButton = () => ({
@@ -524,14 +518,12 @@ export const getCardTitleStyle = (type) => ({
   fontWeight: 700,
   mb: 1,
   color: type === 'primary' ? '#fff' : '#000',
-  fontFamily: "poppins, sans-serif"
 });
 
 export const getCardDescStyle = (type) => ({
   fontSize: '0.95rem',
   lineHeight: 1.6,
   color: type === 'primary' ? '#fff' : '#00000',
-  fontFamily: "poppins, sans-serif"
 });
 
 // Scoped styles for IndustrySolutionsSection
@@ -771,9 +763,8 @@ export const rightColumn = {
 };
 
 export const developerImg = {
-  width: { xs: '100%', md: 'auto' },
-  maxWidth: { xs: '100%', md: '700px' },
-};
+  width:  '100%',
+  maxWidth:"700px",};
 
 export const logosGrid = {
   display: 'flex',
@@ -783,7 +774,6 @@ export const logosGrid = {
 };
 
 export const logoBar = {
-  mt: 8,
   textAlign: 'center',
 };
 
@@ -833,7 +823,6 @@ export const callLink = {
   textTransform: 'none',
   fontSize: '18px',
   textDecoration: 'underline',
-  fontFamily: "poppins, sans-serif",
   '&:hover': {
     color: '#fff',
     textDecoration: 'underline',
@@ -1023,7 +1012,6 @@ export const mobileAppServicesSubtitle = {
   color: '#555',
   fontSize: { xs: '15px', md: '18px' },
   mb: 4,
-  fontFamily: 'Poppins, sans-serif',
 };
 
 export const mobileAppServicesGrid = {
@@ -1032,30 +1020,11 @@ export const mobileAppServicesGrid = {
 };
 
 export const mobileAppServicesCard = {
-  backgroundColor: '#f5f7fa',
-  borderRadius: 3,
-  boxShadow: '0 2px 8px rgba(0,0,0,0.04)',
+  border: '1px solid #ececec',
+  borderRadius: '10px',
   p: 3,
-  minHeight: 120,
-  display: 'flex',
-  flexDirection: 'row',
-  justifyContent: 'space-between',
-  transition: 'all 0.5s',
-  '&:hover': {
-    backgroundColor: '#3243FF',
-    color: '#fff',
-    boxShadow: '0 4px 16px rgba(50,67,255,0.18)',
-    transform: 'translateY(-10px)',
-  },
-  '& .MuiTypography-root, & .MuiSvgIcon-root': {
-    transition: 'color 0.5s',
-    transform: 'translateY(10px)',
-  },
-  '&:hover .MuiTypography-root, &:hover .MuiSvgIcon-root': {
-    color: '#fff',
-  },
+  minHeight: '100%',
 };
-
 export const mobileAppServicesCardTitle = {
   fontWeight: 700,
   fontSize: '18px',
@@ -1066,8 +1035,8 @@ export const mobileAppServicesCardTitle = {
 
 export const mobileAppServicesCardDesc = {
   color: '#555',
-  fontSize: '15px',
-  fontFamily: 'Poppins, sans-serif',
+  fontSize: '16px',
+  fontWeight:400
 };
 
 export const mobileAppServicesArrow = {
@@ -1095,7 +1064,6 @@ export const mobileAppProcessSubtitle = {
   color: '#555',
   fontSize: { xs: '15px', md: '18px' },
   mb: 4,
-  fontFamily: 'Poppins, sans-serif',
 };
 
 export const mobileAppProcessGrid = {
@@ -1146,7 +1114,6 @@ export const mobileAppProcessStepTitle = {
 export const mobileAppProcessStepDesc = {
   color: '#555',
   fontSize: '15px',
-  fontFamily: 'Poppins, sans-serif',
 };
 
 export const mobileAppProcessConnector = {
@@ -1298,7 +1265,6 @@ export const mobileAppProcessCardTitle = {
 export const mobileAppProcessCardDesc = {
   color: '#444',
   fontSize: '15px',
-  fontFamily: 'Poppins, sans-serif',
   textAlign: 'center',
 };
 
@@ -1373,7 +1339,6 @@ export const mobileAppProcessChainTitle = {
 export const mobileAppProcessChainDesc = {
   color: '#444',
   fontSize: '15px',
-  fontFamily: 'Poppins, sans-serif',
   textAlign: 'center',
 };
 
@@ -1521,13 +1486,13 @@ export const mobileAppProcessChainCard6 = {
   textAlign: 'center',
   position: 'relative',
   zIndex: 2,
-  minHeight: { xs: 260, md: 340 },
+  minHeight: { xs: 260, md: 200 },
   overflow: 'hidden',
 };
 
 export const mobileAppProcessChainCardHighlight = {
   width: '100%',
-  height: 48,
+  mb:5,
   background: '#3243ff1a',
   borderTopLeftRadius: 24,
   borderTopRightRadius: 24,
@@ -1580,7 +1545,6 @@ export const mobileAppProcessChainTitle6 = {
 export const mobileAppProcessChainDesc6 = {
   color: '#444',
   fontSize: '15px',
-  fontFamily: 'Poppins, sans-serif',
   textAlign: 'center',
   zIndex: 2,
   position: 'relative',
@@ -1615,9 +1579,151 @@ export const getAboutBannerStyle = () => ({
   // height: "100vh",
   overflow: 'hidden',
   color: '#fff',
-  minHeight: "calc(100vh - 120px)",
+  minHeight: "calc(100vh - 80px)",
   backgroundImage: "url('/assets/images/mobileApp.jpg')",
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
 });
+
+
+//our ethics
+export const sectionWrapper = {
+  px: 3,
+  py: 6,
+  maxWidth: '1200px',
+  mx: 'auto',
+};
+
+export const subtitleStyle = {
+  maxWidth: 700,
+  mb: 4,
+  color: 'text.secondary',
+};
+
+export const tileWrapper = {
+  display: 'flex',
+  alignItems: 'flex-start',
+  gap: 2,
+};
+
+export const iconBox = {
+  minWidth: '40px',
+  mt: '4px',
+};
+
+export const tileTitle = {
+  fontWeight: 600,
+  fontSize: '16px',
+  mb: '4px',
+};
+
+export const tileDesc = {
+  fontSize: '14px',
+  color: 'text.secondary',
+};
+
+
+//industry cards
+
+export const industryBox = {
+  borderRadius: '10px',
+  p: 3,
+  minHeight: '200px',
+  boxShadow: '0 2px 8px rgba(0,0,0,0.08)',
+  transition: 'transform 0.3s ease',
+  '&:hover': {
+    transform: 'translateY(-4px)',
+  },
+};
+
+export const iconStyle = {
+  fontSize: '28px',
+  mb: 1,
+};
+
+export const industryTitle = {
+  fontWeight: '600',
+  fontSize: '16px',
+  mb: 1,
+};
+
+
+//case study
+export const gridContainer = {
+  py: 4,
+};
+
+export const cardBox1 = (imageUrl) => ({
+  position: 'relative',
+  height: '300px',
+  overflow: 'hidden',
+  cursor: 'pointer',
+  display: 'flex',
+  alignItems: 'flex-end',
+
+  '&::before': {
+    content: '""',
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    width: '100%',
+    height: '100%',
+    backgroundImage: `url(${imageUrl})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    transition: 'all 0.9s ease-in-out',
+    transform: 'scale(1)', // initial scale
+    zIndex: 1,
+  },
+
+  '&:hover::before': {
+    transform: 'scale(1.3)', // zoom on hover
+  },
+
+  // overlay content remains above
+  '& .MuiBox-root': {
+    position: 'relative',
+    zIndex: 2,
+    backgroundColor: 'rgba(0, 0, 0, 0.6)',
+    color: '#fff',
+    width: '100%',
+    padding: '20px',
+  },
+});
+
+
+export const overlayBox = {
+  backgroundColor: 'rgba(0, 0, 0, 0.6)',
+  color: '#fff',
+  width: '100%',
+  padding: '20px',
+};
+
+export const chipStyle = {
+  backgroundColor: '#1a73e8',
+  color: '#fff',
+  fontSize: '12px',
+  mb: 1,
+};
+
+export const titleStyle = {
+  fontWeight: 600,
+  fontSize: '18px',
+  mb: 1,
+};
+
+export const techStyle = {
+  fontSize: '13px',
+  mb: 1.5,
+  color: '#ccc',
+};
+
+export const learnMoreStyle = {
+  fontSize: '13px',
+  textDecoration: 'underline',
+  cursor: 'pointer',
+  '&:hover': {
+    color: '#1a73e8',
+  },
+};
