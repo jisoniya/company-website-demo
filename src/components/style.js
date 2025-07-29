@@ -701,54 +701,51 @@ export const blogButtonStyle = () => ({
 });
 
 //contact
-
-export const locationBlock = {
-  mb: 4,
+export const addressBlock = {
+  mb: 3,
 };
 
-export const locationTitle = {
-  fontSize: '16px',
-  fontWeight: 600,
+export const iconStyle1 = {
+  fontSize: 70,
+  color: '#fff',
+  mb: 1,
+};
+
+export const formBox = {
+  backgroundColor: '#fff',
+  borderRadius: '6px',
+  p: 3,
+  color: '#000',
+};
+
+export const formTitle = {
+  fontSize: '13px',
+  fontWeight: 500,
+  mt: 2,
   mb: 0.5,
 };
 
-export const locationText = {
-  fontSize: '14px',
-  color: '#ccc',
-};
-
-export const formContainer = {
-  backgroundColor: '#fff',
-  color: '#000',
-  borderRadius: '8px',
-  p: { xs: 3, md: 4 },
-};
-
-
-export const formBox = {
-  display: 'flex',
-  flexDirection: 'column',
-  gap: 2,
-};
-
 export const inputField = {
-  '& .MuiInputBase-root': {
-    backgroundColor: '#f5f5f5',
+  backgroundColor: '#f2f2f2',
+  borderRadius: '4px',
+  mb: 2,
+  '& input, & textarea': {
+    fontSize: '13px',
   },
 };
 
 export const submitButton = {
-  backgroundColor: '#0046FF',
+  mt: 2,
+  backgroundColor: '#0079F2',
   color: '#fff',
-  fontWeight: 600,
-  fontSize: '15px',
-  px: 4,
-  py: 1.5,
   textTransform: 'none',
+  fontSize: '14px',
+  px: 4,
   '&:hover': {
-    backgroundColor: '#0034cc',
+    backgroundColor: '#005fcc',
   },
 };
+
 
 
 //hire styles
@@ -995,6 +992,45 @@ export const footerLink = {
 };
 
 // Mobile App Services Section Styles
+export const mobileAppProcessChainCard61 = {
+  backgroundColor: '#fff',
+  borderRadius: '16px',
+  p: 3,
+  minHeight: '320px', // Equal height for all cards
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'flex-start',
+  boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
+  mx: 1,
+  transition: 'transform 0.3s ease',
+  '&:hover': {
+    transform: 'translateY(-5px)',
+  },
+};
+
+export const mobileAppProcessChainCardHighlight1 = {
+  background: '#f3f4ff',
+  padding: '10px',
+  borderRadius: '10px 10px 0 0',
+  fontWeight: 600,
+  textAlign: 'center',
+  mb:2
+};
+
+export const mobileAppProcessChainStepNumber61 = {
+  background: '#3243FF',
+  color: '#fff',
+  borderRadius: '50%',
+  width: '32px',
+  height: '32px',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  fontWeight: 'bold',
+  fontSize: '16px',
+  marginBottom: '8px',
+};
+
 export const mobileAppServicesHeading = {
   fontWeight: 800,
   fontSize: { xs: '28px', md: '40px' },
@@ -1650,9 +1686,7 @@ export const industryTitle = {
 
 
 //case study
-export const gridContainer = {
-  py: 4,
-};
+
 
 export const cardBox1 = (imageUrl) => ({
   position: 'relative',

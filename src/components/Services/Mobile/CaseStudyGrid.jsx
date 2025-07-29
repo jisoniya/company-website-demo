@@ -1,7 +1,6 @@
 import React from 'react';
 import { Box, Grid, Typography, Chip } from '@mui/material';
 import {
-  gridContainer,
   cardBox1,
   overlayBox,
   chipStyle,
@@ -49,7 +48,7 @@ const CaseStudyGrid = () => {
   
 
   return (
-    <Grid container spacing={0} sx={gridContainer}>
+    <Grid container spacing={0} >
       {data.map((item, index) => (
         <Grid item xs={12} md={6} key={index}>
           <Box sx={cardBox1(item.image)}>

@@ -9,6 +9,7 @@ import IndustryCards from './IndustryCards';
 import TrustedLogos from '../../TrustedLogos';
 import LeadMagnetBanner from './LeadMagnetBanner';
 import CaseStudyGrid from './CaseStudyGrid';
+import ContactSection from '../../Home/ContactSection';
 
 const Mobile = () => {
   return (
@@ -17,12 +18,13 @@ const Mobile = () => {
  <TrustedLogos />
  <MobileAppServices />
  <TechStackSection />
- <LeadMagnetBanner />
  <MobileAppProcessChain />
 <ValidateAppIdea />
 <OurWorkEthics />
 <CaseStudyGrid />
+<LeadMagnetBanner />
 <IndustryCards />
+<ContactSection />
     </div>
   )
 }
