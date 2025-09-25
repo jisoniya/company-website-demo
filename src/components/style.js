@@ -766,6 +766,17 @@ export const submitButton = {
   },
 };
 
+export const textFieldStyles = {
+  "& .MuiOutlinedInput-root": {
+    "& fieldset": { borderColor: "black" },              // default border
+    "&:hover fieldset": { borderColor: "black" },        // hover border
+    "&.Mui-focused fieldset": { borderColor: "black" },  // focused border
+  },
+  "& .MuiInputBase-input::placeholder": {
+    color: "#000000",   // black placeholder
+    opacity: 1,
+  },
+};
 
 
 //hire styles
